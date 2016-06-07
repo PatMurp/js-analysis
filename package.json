@@ -1,0 +1,28 @@
+{
+  "name": "js-analysis",
+  "version": "0.1.0",
+  "description": "Static analysis of Node.js project with security in mind",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PatMurp/js-analysis.git"
+  },
+  "keywords": [
+    "Node.js",
+    "security",
+    "static-analysis"
+  ],
+  "author": "Patrick Murphy <murphypatv@gmail.com>",
+  "license": "ISC",
+  "bin": {
+    "static": "index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/PatMurp/js-analysis/issues"
+  },
+  "homepage": "https://github.com/PatMurp/js-analysis#readme",
+  "dependencies": {}
+}
