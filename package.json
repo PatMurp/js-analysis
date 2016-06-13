@@ -16,7 +16,7 @@
     "static-analysis"
   ],
   "author": "Patrick Murphy <murphypatv@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bin": {
     "static": "index.js"
   },
