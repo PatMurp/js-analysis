@@ -24,5 +24,7 @@
     "url": "https://github.com/PatMurp/js-analysis/issues"
   },
   "homepage": "https://github.com/PatMurp/js-analysis#readme",
-  "dependencies": {}
+  "dependencies": {
+    "jshint": "^2.9.2"
+  }
 }
