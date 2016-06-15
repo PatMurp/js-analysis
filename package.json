@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/PatMurp/js-analysis#readme",
   "dependencies": {
-    "jshint": "^2.9.2"
+    "jshint": "^2.9.2",
+    "shelljs": "^0.7.0"
   }
 }
