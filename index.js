@@ -5,7 +5,7 @@ var shell = require('shelljs')
 shell.exec('mkdir -p reports');
 
 // jshint
-shell.exec('echo "running jshint" && node_modules/.bin/jshint index.js > reports/jshint.txt');
+shell.exec('echo "running jshint" && node_modules/.bin/jshint *.js > reports/jshint.txt');
 
 // nsp
 shell.exec('echo "running nsp" && node_modules/.bin/nsp check > reports/nps.txt')
