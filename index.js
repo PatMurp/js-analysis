@@ -1,13 +1,15 @@
 #! /usr/bin/env node
-var shell = require('shelljs')
-
+const shell = require('shelljs/global')
+const lint = require('./src/lint');
+const check = require('./src/checkModules')
 // if reports directory doesnt exist create it
-shell.exec('mkdir -p reports');
 
-// jshint
-shell.exec('echo "running jshint" && node_modules/.bin/jshint *.js > reports/jshint.txt');
+mkdir('-p', 'reports')
 
-// nsp
-shell.exec('echo "running nsp" && node_modules/.bin/nsp check > reports/nps.txt')
+lint.lintFiles();
+check.checkDependencies()
+
+
+
 
 
