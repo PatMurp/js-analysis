@@ -11,9 +11,12 @@ module.exports.fileTail = function() {
 	echo('jshint ').toEnd(summary) &&
 	exec('tail -1 reports/jshint.txt | head -1')
 	.toEnd(summary + '\n');
+	echo('eslint ').toEnd(summary) &&
+	exec('tail -2 reports/eslint.txt | head -1')
+	.toEnd(summary + '\n');
 	echo('jsinspect ').toEnd(summary) &&
-	exec('tail -1 reports/jsinspect.txt | head -1').
-	toEnd(summary + '\n');
+	exec('tail -1 reports/jsinspect.txt | head -1')
+	.toEnd(summary + '\n');
 };
 
 

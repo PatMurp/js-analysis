@@ -11,11 +11,11 @@ const summary = require('./src/summary');
 // if reports directory doesnt exist create it
 dir.checkDirectorySync('./reports');
 
-//lint.lintJSHint();
+lint.lintJSHint();
 lint.lintESlint()
-//check.checkDependencies();
-//duplc.duplicate();
-//maint.plato();
+check.checkDependencies();
+duplc.duplicate();
+maint.plato();
 
 summary.fileTail();
 
