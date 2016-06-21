@@ -26,6 +26,7 @@
   "homepage": "https://github.com/PatMurp/js-analysis#readme",
   "dependencies": {
     "jshint": "^2.9.2",
+    "jsinspect": "^0.8.0",
     "nsp": "^2.4.0",
     "opener": "^1.4.1",
     "plato": "git+https://github.com/deedubs/es6-plato.git",
