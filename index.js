@@ -2,9 +2,10 @@
 const shell = require('shelljs/global')
 const lint = require('./src/lint');
 const check = require('./src/checkModules')
-const dir = require('./src/directory')
+const dir = require('./src/directory');
 const maint = require('./src/mantainability');
-const duplc = require('./src/duplicate')
+const duplc = require('./src/duplicate');
+const summary = require('./src/summary');
 
 
 // if reports directory doesnt exist create it
@@ -14,6 +15,8 @@ lint.lintFiles();
 //check.checkDependencies()
 duplc.duplicate();
 //maint.plato();
+
+summary.fileTail();
 
 
 
