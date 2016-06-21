@@ -5,7 +5,7 @@ const summary = require('./summary');
 
 module.exports.lintJSHint = function() {
 	echo('running jshint') &&
-	exec('node_modules/.bin/jshint --exclude ./node_modules,reports').
+	exec('node_modules/.bin/jshint --exclude ./node_modules,reports .').
 	to('reports/jshint.txt');
 };
 
