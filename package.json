@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/PatMurp/js-analysis#readme",
   "dependencies": {
+    "eslint": "^2.13.1",
     "jshint": "^2.9.2",
     "jsinspect": "^0.8.0",
     "nsp": "^2.4.0",

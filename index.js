@@ -1,7 +1,7 @@
 #! /usr/bin/env node
-const shell = require('shelljs/global')
+const shell = require('shelljs/global');
 const lint = require('./src/lint');
-const check = require('./src/checkModules')
+const check = require('./src/checkModules');
 const dir = require('./src/directory');
 const maint = require('./src/mantainability');
 const duplc = require('./src/duplicate');
@@ -9,14 +9,17 @@ const summary = require('./src/summary');
 
 
 // if reports directory doesnt exist create it
-dir.checkDirectorySync('./reports')
+dir.checkDirectorySync('./reports');
 
-lint.lintFiles();
-check.checkDependencies()
+
+lint.lintJSHint();
+lint.lintESlint()
+check.checkDependencies();
 duplc.duplicate();
 maint.plato();
 
 summary.fileTail();
+
 
 
 
