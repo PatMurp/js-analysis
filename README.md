@@ -9,8 +9,12 @@ $ cd js-analysis
 $ npm i  
 $ npm link
 ```
-application is now available as a global command  
-cd into root of any Node.js project use static command
+This installs script on system and & any changes to js-analysis will be updated automatically  
+cd into root of any Node.js project  
+Install module via git  
+Run static command on project  
+A reports directory is generated and plato report is opened in default browser
 ```
+& npm i --save git+https://github.com/PatMurp/js-analysis.git
 $ static
 ```
