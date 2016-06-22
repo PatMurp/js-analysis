@@ -18,13 +18,3 @@ duplc.duplicate();
 maint.plato();
 
 summary.fileTail();
-
-
-
-
-
-
-
-
-
-
