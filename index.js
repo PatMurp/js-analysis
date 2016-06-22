@@ -12,9 +12,9 @@ const summary = require('./src/summary');
 dir.checkDirectorySync('./reports');
 
 lint.lintJSHint();
-lint.lintESlint()
+lint.lintESlint();
 check.checkDependencies();
 duplc.duplicate();
 maint.plato();
 
-summary.fileTail();
+summary.generate();

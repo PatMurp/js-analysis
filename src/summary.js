@@ -6,7 +6,7 @@ const heading = ('analysis run on ' + date + ' \n');
 const summary = 'reports/summary.txt';
 
 // build report summary
-module.exports.fileTail = function() {
+module.exports.generate = function() {
 	echo(heading).toEnd(summary);
 	jshintSummary();
 	eslintSummary();
