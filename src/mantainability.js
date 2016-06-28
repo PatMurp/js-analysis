@@ -7,7 +7,7 @@ const projName = exec('basename "$PWD"');
 const dir = ' -r -d reports/plato';
 const lint = '-l .jshintrc';
 const title = ' -t ' +  '"' + projName + '"';
-const exclude = ' -x "node_modules/|reports|bower_components|public/scripts/externe" . ';
+const exclude = ' -x "node_modules/|reports|bower_components" . ';
 const platoCommand = 'node_modules/.bin/plato' +  title + dir + exclude  + lint ;
 
 
