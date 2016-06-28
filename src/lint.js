@@ -3,7 +3,7 @@ const shell = require('shelljs/global');
 
 module.exports.lintJSHint = function() {
 	echo('running jshint') &&
-	exec('node_modules/.bin/jshint --exclude node_modules/,reports,bower_components .').
+	exec('node_modules/.bin/jshint .').
 	to('reports/jshint.txt');
 };
 
