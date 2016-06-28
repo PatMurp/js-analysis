@@ -7,7 +7,6 @@ const maint = require('./src/mantainability');
 const duplc = require('./src/duplicate');
 const summary = require('./src/summary');
 
-
 // if reports directory doesnt exist create it
 dir.checkDirectorySync('./reports');
 
@@ -18,3 +17,10 @@ duplc.duplicate();
 maint.plato();
 
 summary.generate();
+
+
+
+
+
+
+
