@@ -4,8 +4,7 @@
   "description": "Static analysis of Node.js project with security in mind",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "cpRule"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -20,7 +19,7 @@
   "license": "MIT",
   "bin": {
     "static": "index.js",
-    "cpRule": "copyRules.js"
+    "cpRules": "copyRules.js"
   },
   "bugs": {
     "url": "https://github.com/PatMurp/js-analysis/issues"
