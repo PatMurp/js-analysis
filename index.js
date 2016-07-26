@@ -12,12 +12,12 @@ dir.checkDirectorySync('./reports');
 
 lint.lintJSHint();
 lint.lintESlint();
-check.checkDependencies();
 duplc.duplicate();
 maint.plato();
 
-summary.generate();
 
+summary.generate();
+check.checkDependencies();
 
 
 
