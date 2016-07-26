@@ -1,4 +1,4 @@
 #! /usr/bin/env node
-const cp = require('./src/copy');
+const cprules = require('./src/copy');
 
-cp.copyConfig();
+cprules.copyConfig();

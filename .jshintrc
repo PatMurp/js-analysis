@@ -1,12 +1,9 @@
 {
-  /*
-   * Author rules
-   * https://gist.github.com/PatMurp/9ff6aef85deeb91c3c6b
-   *
-   */
 
   // Define globals exposed by Node.js.  
   "node": true,
+
+  "shelljs": true,
 
   // Allow ES6.
   "esversion": 6,
@@ -30,5 +27,8 @@
   "undef": true,
 
   // Warn when variables are defined but never used.
-  "unused": true
+  "unused": false,
+
+  // suppresses warnings about the use of expressions
+  "expr": true
 }
