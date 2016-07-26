@@ -9,7 +9,6 @@ const summary = 'reports/summary.txt';
 module.exports.generate = function() {
 	echo(heading).toEnd(summary);
 	jshintSummary();
-	eslintSummary();
 	jsinspectSummary();
 };
 
