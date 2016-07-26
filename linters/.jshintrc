@@ -1,0 +1,34 @@
+{
+  /*
+   * Author rules
+   * https://gist.github.com/PatMurp/9ff6aef85deeb91c3c6b
+   *
+   */
+
+  // Define globals exposed by Node.js.  
+  "node": true,
+
+  // Allow ES6.
+  "esversion": 6,
+
+  // Enforce placing 'use strict' at the top function scope
+  "strict": true,
+
+  // Max depth of nested blocks (within functions)
+  "maxdepth": 3,
+
+  // Max cyclomatic complexity per function
+  "maxcomplexity": 10,
+
+  // Prohibit use of == and != in favor of === and !==.
+  "eqeqeq": true,
+
+  // Prohibit use of a variable before it is defined
+  "latedef": true,
+
+  // Prohibit use of explicitly undeclared variables
+  "undef": true,
+
+  // Warn when variables are defined but never used.
+  "unused": true
+}
