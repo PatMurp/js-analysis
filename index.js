@@ -11,7 +11,6 @@ const summary = require('./src/summary');
 dir.checkDirectorySync('./reports');
 
 lint.lintJSHint();
-lint.lintESlint();
 duplc.duplicate();
 maint.plato();
 
