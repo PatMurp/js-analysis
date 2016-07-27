@@ -12,7 +12,13 @@ function jshintIgnore() {
 	pipe(fs.createWriteStream('.jshintignore'));
 }
 
+function jsinspectIgnore() {
+	fs.createReadStream('node_modules/js-analysis/linters/.jsinspectrc').
+	pipe(fs.createWriteStream('.jsinspectrc'));
+}
+
 module.exports.copyConfig = function() {
 	jshintRules();
 	jshintIgnore();
+	jsinspectIgnore();
 };
