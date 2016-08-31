@@ -17,8 +17,3 @@ maint.plato();
 summary.generate();
 check.checkDependencies();
 
-
-
-
-
-
